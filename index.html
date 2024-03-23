@@ -6,6 +6,7 @@
   <meta name="description" content="Photo bookのWebサイトです。">
   <meta name="robots" content="noindex">
   <title>Photo book 2</title>
+  <link href="img/mainvisual.webp" as="image" rel="preload" type="image/webp">
   <link rel="stylesheet" href="destyle.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,7 +17,7 @@
   <div class="container-large">
     <header>
       <h1>
-        <a href="index.html"><img src="img/logo.svg" alt="ロゴ画像" width="180" height="18"></a>
+        <a href="index.html"><img src="img/logo.svg" alt="ロゴ画像" width="180" height="18" fetchpriority="high"></a>
       </h1>
     </header>
 
@@ -44,10 +45,10 @@
 
     <section class="image">
       <figure>
-        <img src="img/photo1.webp" alt="photo1の画像です。" width="784" height="522">
-        <img src="img/photo2.webp" alt="photo2の画像です。" width="784" height="522">
-        <img src="img/photo3.webp" alt="photo3の画像です。" width="784" height="522" fetchpriority="low">
-        <img src="img/photo4.webp" alt="photo4の画像です。" width="784" height="522" fetchpriority="low">
+        <img src="img/photo1.webp" alt="photo1の画像です。" width="784" height="522" loading="lazy">
+        <img src="img/photo2.webp" alt="photo2の画像です。" width="784" height="522" loading="lazy">
+        <img src="img/photo3.webp" alt="photo3の画像です。" width="784" height="522" loading="lazy">
+        <img src="img/photo4.webp" alt="photo4の画像です。" width="784" height="522" loading="lazy">
       </figure>
     </section><!-- /.image -->
 
