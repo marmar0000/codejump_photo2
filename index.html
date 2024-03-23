@@ -6,10 +6,11 @@
   <meta name="description" content="Photo bookのWebサイトです。">
   <meta name="robots" content="noindex">
   <title>Photo book 2</title>
-  <link rel="stylesheet" href="https://unpkg.com/destyle.css@4.0.1/destyle.css">
+  <link rel="stylesheet" href="destyle.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 
 
   <div class="container-large">
@@ -45,8 +46,8 @@
       <figure>
         <img src="img/photo1.webp" alt="photo1の画像です。" width="784" height="522">
         <img src="img/photo2.webp" alt="photo2の画像です。" width="784" height="522">
-        <img src="img/photo3.webp" alt="photo3の画像です。" width="784" height="522">
-        <img src="img/photo4.webp" alt="photo4の画像です。" width="784" height="522">
+        <img src="img/photo3.webp" alt="photo3の画像です。" width="784" height="522" fetchpriority="low">
+        <img src="img/photo4.webp" alt="photo4の画像です。" width="784" height="522" fetchpriority="low">
       </figure>
     </section><!-- /.image -->
 
@@ -77,6 +78,7 @@
     </footer>
 
   </div><!-- /.container-small -->
+
 
 
 </body>
